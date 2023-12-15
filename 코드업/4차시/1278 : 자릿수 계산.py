@@ -5,3 +5,6 @@ print(length)#출력
 """
 
 print(len(input()))
+
+a = "input"
+print(len(a)) # >> 5

@@ -43,7 +43,7 @@ else:
 
 a = input()
 print(len(a))
-"""
+
 # 클래스 정의
 # 클래스 정의
 class Stu:
@@ -75,3 +75,16 @@ c = Aespa(3333, "Karina")
 c.Hi() 
 # >> Hi, 3333 Karina!
 # >> 안녕하세요! 저는 에스파 3333 Karina입니다!
+
+a = input()*5
+print(a)
+print("hello"+"world")
+print(3**3)
+
+"""
+a1 = [6, 3, 9]
+a2 = []
+
+# sort() : 리스트 원본을 정렬
+a1.sort()
+print(a1, a2, sep=", ") # >> [3, 6, 9], []
