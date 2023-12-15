@@ -20,7 +20,7 @@ print(c)
 k, n = map(int, input().split())#쿠폰수, 필요수
 a=0
 while k>=n:
-    a+=k//n
+    a+=k//n#산 커피 수
     k=(k//n)+(k%n)#산 커피수만큼 받은 쿠폰+남은 쿠폰
     
 print(a)
