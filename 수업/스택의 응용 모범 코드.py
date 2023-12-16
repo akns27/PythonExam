@@ -6,10 +6,10 @@ class ArrayStack :
 
     def isEmpty(self) :
         return self.top == -1
-   
+
     def isFull (self):
         return self.top == self.capacity
-   
+
     def push(self, e):
         if not self.isFull():
             self.top += 1
