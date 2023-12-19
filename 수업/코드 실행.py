@@ -1,13 +1,33 @@
 """
-print(type(bool))
-print(type(list))
-print(type(tuple))
-print(type(dict))
-print(type(set))
+print(type(123))# <class 'int'>
+print(type(12.3))# <class 'float'>
+print(type(True))# <class 'bool'>
+print(type('abc'))# <class 'str'>
+print(type([1,2,3]))# <class 'list'>
+print(type((1,2,3)))# <class 'tuple'>
+print(type({1,2,3}))# <class 'set'>
+print(type({"a":1, "b":2, "c":3}))# <class 'dict'>
+
+
 list = [1, 2, 3, 4, 5] # 인덱스는 0부터 시작
 print(list[1:3]) #2, 3출력
+print(*list[0:3]) #1, 2, 3출력
 print(list[:3])#1,2,3 출력
 print(list[1:])#2,3,4,5 출력
+print(list[0:])#1,2,3,4,5 출력
+
+print(5/2)#2.5
+print(5//2)#2
+print(5%2)#1
+a = 0
+a += 3
+print(a)#3
+b = 4
+b -= 3
+print(b)#1
+b = 0
+#b++ 이건 안 됨
+
 
 a = input()
 reverse_a = ''
@@ -81,10 +101,19 @@ print(a)
 print("hello"+"world")
 print(3**3)
 
-"""
 a1 = [6, 3, 9]
 a2 = []
 
 # sort() : 리스트 원본을 정렬
 a1.sort()
 print(a1, a2, sep=", ") # >> [3, 6, 9], []
+"""
+
+
+a = [1, 2, 3]
+a.reverse()
+print(a)
+
+my_list = [1, 2, 3, 4, 5]
+reversed_list = list(reversed(my_list))
+print(reversed_list)
