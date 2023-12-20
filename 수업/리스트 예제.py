@@ -11,7 +11,7 @@ num = list(map(int, input.split('')))#학생들의 번호
 result = list(0 for _ in range(24))#학생들을 차례대로 배열시킬 리스트 생성
 
 for i in range(n):
-    result[num[i]]+=1#i번째로 입력받은 학생의 번호이다. 따라서 result[num[i]]+=1은 해당 학생의 번호가 부른 횟수를 1 증가시킨다.
+    result[num[i]]+=1#i번째로 입력받은 학생의 번호이다. 따라서 result[num[i]]+=1은 해당 학생의 번호가 불린 횟수를 1 증가시킨다.
 
 for i in range(1, 24):
     print(result[i], end=' ')

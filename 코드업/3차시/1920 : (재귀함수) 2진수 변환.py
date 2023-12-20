@@ -11,7 +11,7 @@ bin()을 사용하면 간편하게 10진수를
 def f(n):
     if (n > 0):
         f(n // 2)#2로 나눈 몫만 
-        print(n % 2, end =  "")
+        print(n % 2, end = " ")
 
 n = int(input()) 
 if (n <= 0):

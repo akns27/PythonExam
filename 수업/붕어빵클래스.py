@@ -32,8 +32,9 @@ class MarketGoods(FishCakeMaker):
     super().__init__(**kwargs)#super()<- 내가 상속받은 부모 클래스에 접근
     self.market_price = self.price+margin
   def show(self):
-    print(self.flavor,self.market_price)#오버라이딩, 부모의 show()를 쓰려면 super.print()...
+    print(self.flavor,self.size,self.market_price)#오버라이딩, 부모의 show()를 쓰려면 super.print()...
 
-fish1=MarketGoods(size=20, price=500)
+fish1=MarketGoods(flavor = "슈크림", size=20, price=500)#size는 무쓸모
 fish1.show()
 #파이썬은 자바와 다르게 다중 상속이 가능하다
+
